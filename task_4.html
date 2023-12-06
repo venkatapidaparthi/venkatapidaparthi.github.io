@@ -12,24 +12,126 @@
         <h1>LINKED VIEW VISUALIZATIONS</h1>
 
         <h2>Linked View Visualization - 1</h2>
+        <p>This linked visualization is an interactive combination of a time 
+            series line chart and a bar chart focused on driver actions in traffic incidents. The visualization utilizes a 
+            sampled subset of traffic crash data.
+
+            The top part is a time series chart, which uses a line mark to represent the count of crashes over time, plotted on 
+            a monthly basis. We can select a specific time range through an interactive brush tool on the x-axis. This selection 
+            feature adds a dynamic element, allowing for the examination of trends within chosen time frames.
+            
+            Below the time series chart is a bar chart depicting various driver actions, such as speeding or failing to yield, 
+            associated with these incidents. The bars are oriented horizontally, with the count of incidents on the x-axis and 
+            the driver actions on the y-axis. This chart includes a multi-selection tool, enabling the highlighting of specific driver actions.
+            
+            The two charts are linked; the selection made in the time series chart (time range) directly influences the data displayed
+             in the driver action chart. This linkage allows for a layered analysis: users can see how different driver actions 
+             contribute to accidents within selected time periods.
+            
+            This visualization provides an insightful look into how driver behavior correlates with traffic incidents over time. 
+            </p>
+            <p>Select the Time range of your Choice by Brushing your cursor on the chart</p>    
         <div id="vis1"></div>
 
         <h2>Linked View Visualization - 2</h2>
+        <p>This visualization, titled "Dynamic Aggregation Geospatial Map of Traffic Crashes," effectively combines a geospatial map 
+            with an interactive dropdown for a detailed analysis of traffic accidents. A key feature of this visualization is the dynamic 
+            aggregation aspect. It incorporates an interactive dropdown menu that allows users to select a specific type of crash from the 
+            available options, which are dynamically populated from the dataset. Once a selection is made, the map updates to only 
+            display incidents of the chosen crash type. This approach offers us the ability for filtering and exploring specific subsets
+             of data, making it easier to identify patterns or trends related to particular types of traffic incidents.</p>
+        <p>Please refresh or select another option for the visualization to appear. the first selection's visualization might not appear at first due to large data, but as you select another options and come to the first selection later, the full visualization will be loaded.</p>     
         <div id="vis2"></div>
 
         <h2>Linked View Visualization - 3</h2>
+        <p>This visualization combines four charts analyzing traffic crash data by state, age, gender, and driver action. 
+            It includes a bar chart depicting crash frequency by state, another showing age distribution of individuals in crashes, 
+            a third chart comparing crash counts by gender, and a fourth detailing driver actions in selected crashes. 
+            The data is drawn from a traffic crash dataset, providing diverse insights into crash demographics and behaviors.
+
+            To interact with this visualization, we can select specific states in the "Crash Frequency by State" chart, 
+            choose age ranges using a brush tool in the "Age Distribution" chart, and pick genders in the "Crash Count by Gender" 
+            chart. These selections dynamically influence the data displayed in the other charts, particularly the "Driver Actions
+             in Selected Crashes" chart, which updates to reflect the combined criteria of state, age, and gender selections, 
+             enabling a tailored exploration of the crash data. </p>
+        <p>This is a four-way linked visualization. all the graphs are linked to each other. Please click on one of these visualizations to see how they affect other visualization and how the data changes.</p>     
         <div id="vis3"></div>
 
         <h2>Linked View Visualization - 4</h2>
+        <p>This Linked visualization, is a composite of three charts that 
+            provide an insightful analysis of traffic crash data. it undergoes preprocessing to 
+            ensure data types are appropriate for analysis, with a focus on crash hours and total injuries.
+
+            The central component is a scatter plot, which displays the relationship between the hour of the crash (x-axis) and 
+            the total number of injuries (y-axis). This plot employs an interactive selection mechanism, allowing users to highlight 
+            specific hours through a clickable legend. The color coding dynamically changes based on the selection, enhancing user 
+            engagement.
+            
+            Flanking the scatter plot are two histograms. One displays the distribution of crashes by hour, and the other shows 
+            the distribution of total injuries. Both histograms are responsive to the scatter plot's selection, updating to reflect
+             the chosen data subset. This approach provides a multifaceted view of the data: the scatter plot offers a detailed look at the correlation
+             between the time of crash and injury severity, while the histograms give a broader overview of crash and injury 
+             distributions.</p>
+        <p>Note: For Interaction with the charts. Please click on the hours  of your preference under Crash Hour Legend to see specific values. </p>     
         <div id="vis4"></div>
 
         <h2>Linked View Visualization - 5</h2>
+        <p>This visualization, titled "Linked Analysis of Crashes by Hour, Roadway Surface Condition, and Primary Contributory Cause,"
+             is a comprehensive display that combines a pie chart with two bar charts, all linked through an interactive selection 
+             feature.
+
+            The centerpiece is a pie chart showing the distribution of crashes by hour. Each slice is color-coded and represents a 
+            different hour, with a tooltip providing the count of crashes. This pie chart includes an interactive legend allowing 
+            users to select specific hours.
+            
+            Flanking the pie chart are two bar charts. The first one analyzes crashes based on roadway surface conditions, such as dry,
+             wet, or icy roads, and the second one focuses on the primary contributory cause of the crashes, like speeding or 
+             distractions. Both bar charts dynamically update based on the hour selection made in the pie chart, offering a detailed 
+             breakdown of conditions and causes corresponding to selected hours.
+            
+            This linked visualization provides an insightful multi-dimensional analysis. By interacting with the pie chart, 
+            users can explore how different factors like roadway conditions and crash causes vary throughout the day. 
+            </p>
+            <p>Note: For Interaction with the charts. Please click on the hours of your preference under Crash Hour Legend to see specific values. </p>    
         <div id="vis5"></div>
 
         <h2>Linked View Visualization - 6</h2>
+        <p>This visualization, titled "Lighting Conditions and Filtered Heatmap of Traffic Crashes," pairs a pie chart with 
+            a heatmap to explore the correlation between lighting conditions and traffic accidents. The visualization uses 
+            a sampled dataset to ensure a manageable analysis scope.
+
+            The pie chart forms the first part of the visualization. It displays various lighting conditions 
+            (like daylight, dusk, or darkness) and their respective incident counts. The chart employs a 20-color categorical 
+            scheme for differentiation and includes an interactive single-selection tool. This tool allows users to focus on a 
+            specific lighting condition, affecting the heatmap's display.
+            
+            Beneath the pie chart is a heatmap that adapts according to the selected lighting condition in the pie chart. 
+            It geographically represents traffic accidents, with circle markers indicating location and incident density. 
+            The color intensity changes based on the number of incidents, revealing how different lighting conditions might 
+            impact the frequency and distribution of traffic accidents in specific areas.
+            
+            This combined visualization offers a nuanced understanding of the relationship between lighting conditions and 
+            accident occurrences. </p>
+        <p>Note: The graph at first will appear empty without selection. The visualization of the Biggest pie in the pie chart may take time to load due to the large data, but the others will work just fine while the first one loads. for example, click on the light blue pie and then continue to see how the colour density and spot density changes.</p>    
         <div id="vis6"></div>
 
         <h2>Linked View Visualization - 7</h2>
+        <p>This visualization is an interactive data 
+            presentation combining three bar charts. The charts are based on traffic crash data, offering insights into crash 
+            frequencies, driver physical conditions, and blood alcohol concentration (BAC) results at the time of crashes.
+
+            The first chart, "Crash Frequency by Hour of the Day," displays the number of crashes occurring at different hours,
+             with an interval brush for selecting a specific time range. The second chart, "Physical Condition of Drivers at Crash Time,
+             " shows the count of drivers in various physical conditions (like normal, impaired, etc.) during crashes. The third chart,
+              "BAC Result Distribution," illustrates the distribution of BAC results among drivers involved in crashes. All three charts
+               are linked through the brush tool in the hour chart; selecting a time range on this chart filters the data in the other 
+               two charts accordingly.
+            
+            To interact with the visualization, users can select a range of hours in the crash hour chart using the brush tool. 
+            This selection dynamically filters and updates the data displayed in the physical condition and BAC result charts to 
+            reflect crashes occurring within that selected time frame. This interactive feature allows for a focused analysis of 
+            how driver conditions and BAC results vary across different times of the day. </p>
+        <p>Select the Time range of your Choice by dragging your cursor on the chart</p>    
         <div id="vis7"></div>
 
         

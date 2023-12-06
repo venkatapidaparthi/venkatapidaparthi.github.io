@@ -12,35 +12,92 @@
         <h1>Basic and Preliminary Vega-Lite Visualizations</h1>
 
         <h2>Visualization - 1</h2>
+        <p>This visualizationis a representation of traffic crash 
+            data on an hourly and weekly basis. It's created from a dataset where the crash dates are converted to datetime format,
+             allowing for the extraction of specific hours and days of the week.
+
+            The core of the visualization is a heatmap, where the x-axis represents the hours of the day (0 to 23) and the y-axis 
+            indicates the days of the week. Each cell in the heatmap corresponds to the combination of a specific hour and day, 
+            with the color intensity indicating the number of crashes that occurred during that time. The color scheme used is 
+            shades of orange, with darker shades representing higher numbers of crashes. This is accompanied by tooltips that 
+            provide exact numbers of crashes for each hour and day combination.
+            
+            This heatmap offers a clear visual representation of crash patterns, allowing for easy identification of peak times 
+            for accidents throughout the week. For instance, users can quickly discern if more crashes occur during specific 
+            hours or on certain days.</p>
         <div id="vis1"></div>
+        
 
         <h2>Visualization - 2</h2>
+        <p>
+            This bar chart, presents a clear visualization of traffic crash 
+            frequencies in the top 10 ZIP codes with the most incidents. The ZIP codes are displayed along the x-axis,
+             and the corresponding number of crashes is represented by the height of each bar, colored with the 'viridis' 
+             palette for easy differentiation. This chart effectively highlights areas with higher crash counts, 
+             useful for urban planning and safety analysis. </p>
         <div id="vis2"></div>
 
         <h2>Visualization - 3</h2>
+        <p>This visualization, titled "Bubble Chart of Traffic Crashes by Day of Week correlating The month of crash and 
+            the Hour of crash occurrence," is a bubble chart that offers a multi-dimensional view of traffic crash data. 
+            The chart plots crash hours (x-axis) against crash months (y-axis), with each bubble's size representing 
+            the total number of injuries associated with each incident. Additionally, the bubbles are color-coded by
+             the day of the week, utilizing a 20b-category color scheme for distinct visualization.
+
+            The tooltip feature provides detailed information for each bubble, including the crash hour, month, total injuries, 
+            and the day of the week. This enables us to discern patterns and correlations between the time of crash 
+            (both hourly and monthly) and the resultant injuries, as well as how these factors vary across different days of the week.
+            
+            This bubble chart effectively combines several variables to give a comprehensive overview of crash data, 
+            revealing potential temporal trends and injury severity patterns. </p>
         <div id="vis3"></div>
 
         <h2>Visualization - 4</h2>
+        <p> </p>
         <div id="vis4"></div>
 
         <h2>Visualization - 5</h2>
+        <p> </p>
         <div id="vis5"></div>
 
         <h2>Visualization - 6</h2>
+        <p>The visualization combines a bar chart and a line chart to analyze 
+            traffic crashes, using a dataset with dates converted to year-month format. The bar chart shows crash counts by person 
+            type (e.g., driver, pedestrian), using opacity and color differentiation, while the line chart tracks the trend of 
+            crashes over time for each person type, complete with tooltips for detailed month, person type, and crash count 
+            information. To use this chart, we should observe the overall trends in the line chart for temporal patterns, 
+            compare crash counts across person types in the bar chart, interactively hover for specifics, and analyze for any 
+             patterns or anomalies. This layered approach provides a rich, multi-dimensional view of crash data, 
+             though it doesn't imply causation. A zoom in interaction has also been provided to view the minor attributes properly.</p>
         <div id="vis14"></div>
 
         <h1>Vega-Lite Visualizations (PIE REPRESENTATIONS)</h1>
 
         <h2>PIE REPRESENTATION - 1</h2>
+        <p>This visualization features two pie charts analyzing traffic crashes based on "Weather Conditions" and "Lighting Conditions,
+            " each using a vibrant 20-category color scheme. The charts, show the 
+            distribution of crashes under various conditions, with each slice representing a different condition and its count.
+             The interactive tooltips provide specific counts for each condition, offering a clear, color-coded breakdown of how
+              weather and lighting impact crash occurrences. </p>
         <div id="vis6"></div>
 
         <h2>PIE REPRESENTATION - 2 </h2>
+        <p>This pie chart, titled "Roadway Surface Condition Distribution," visualizes the distribution of traffic crashes based 
+            on different roadway surface conditions. The chart, offers a segmented view with each slice indicating a specific condition, along with interactive tooltips 
+             providing the count for each surface type. </p>
         <div id="vis7"></div>
 
         <h2>PIE REPRESENTATION - 3</h2>
+        <p>The pie chart "Primary Contributory Cause Distribution" illustrates the varied causes of traffic crashes.
+             it features interactive tooltips that provide the count for each contributory cause,
+             offering a visually engaging and informative breakdown of crash factors. </p>
         <div id="vis8"></div>
 
         <h2>PIE REPRESENTATIONS - 4</h2>
+        <p>The "First Crash Type Distribution" pie chart provides an insightful visualization of different initial crash 
+            types in a traffic dataset. It presents a clear breakdown of each 
+            crash type's frequency, 
+            enhanced with interactive tooltips for specific count details. </p>
         <div id="vis9"></div>
 
         
@@ -48,9 +105,21 @@
         <h1>BOX & VIOLIN PLOTS</h1>
 
         <h2>BOX PLOT</h2>
+        <p>This Vega visualization illustrates the distribution of ages across different
+             months in a given dataset. Each boxplot corresponds to a month, showcasing the age spread through medians, quartiles, and extremes,
+              allowing for a comparative view of age distributions over time. The horizontal orientation of the months with the vertical
+               distribution of ages, 
+            coupled with a clear title and axis labels, provides a straightforward and informative analysis of age variations by month. </p>
         <div id="vis12"></div>
 
         <h2>VIOLIN PLOTS</h2>
+        <p>This visualization features a series of violin plots, each representing the density distribution of traffic 
+            crashes by hour under different weather conditions. The plots are horizontally oriented, with crash hours on the y-axis
+             and density values on the x-axis. Each violin plot corresponds to a specific weather condition, color-coded for distinction,
+              and the collection of plots is arranged in a grid layout with three columns. Tooltips provide detailed information for each 
+              crash hour. The use of density plots allows for a nuanced understanding of how crash frequencies vary throughout the day under 
+              different weather scenarios, based on a sampled dataset. This format offers a visual comparison across various weather conditions, 
+            highlighting potential patterns or anomalies in crash occurrences related to weather. </p>
         <div id="vis13"></div>
         
 

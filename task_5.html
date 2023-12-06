@@ -12,33 +12,74 @@
         <h1>SPATIAL VISUALIZATIONS</h1>
 
         <h2>Spatial Visualization - 1</h2>
+        <p>This spatial visualization visually represents traffic accidents across Chicago's ZIP codes, 
+            using color intensity to denote accident frequencies – darker areas indicate more hotspots. 
+            It integrates traffic data with geographical boundaries, offering insights like identifying accident
+             hotspots and geographical trends, which can aid in resource allocation and safety planning. 
+             The map uses tooltips for detailed ZIP code and accident data, and a vertically flipped 'identity'
+              projection for ease of interpretation. However, it's limited by its static nature, 
+              not reflecting temporal changes, and lacks causal information about the accidents, which will be addressed in the later part .</p>
         <div id="vis1"></div>
 
         <h2>Spatial Visualization - 2</h2>
+        <p>This spatial visualization employs the Central Limit Theorem in its design, an important convolution concept in statistics that 
+            facilitates the use of data to estimate population hotspot parameters. This heatmap displays vehicle 
+            accident distribution from a dataset, focusing on incident density. The map utilizes circular markers with color intensity 
+            (on a red-blue scale) to signify crash incident density at specific locations. Coordinates are based on longitude and latitude, 
+            centering on the mean values of the data. Using the Mercator projection with an adjustable scale factor allows 
+            zooming adjustments, enhancing geographic detail. Tooltips provide exact location data for each incident. </p>
         <div id="vis2"></div>
 
         <h2>Spatial Visualization - 3</h2>
+        <p>This Spatial visualization consists of two side-by-side convoluted heatmaps titled "Traffic Crashes in 2019" and "Traffic Crashes in 2020," showcasing 
+            a comparative analysis of vehicle accidents over two different years (pre-COVID and during-COVID) using statistical sampling. It leverages the Law of Large Numbers, 
+            a fundamental theorem in probability theory, to ensure the representativeness of the data across different time periods. 
+            The heatmaps are generated with the dataset split to focus separately on incidents from 2019 
+            and 2020. The Mercator projection is employed for geographic accuracy, with the size and color scales adjusted to highlight 
+            variations in incident density between the two years.</p>
         <div id="vis3"></div>
 
         <h2>Spatial Visualization - 4</h2>
+        <p>This spatial visualization is a proportional symbols map representing hotspots after collecting the main and dense hotspots from a group of hotspots
+            which are taken displaying the Weather and Lighting conditions of that dense hotspot. Hover over to see the conditions of every point.
+        </p>
         <div id="vis4"></div>
-
-
-        
 
         <h1>LINKED SPATIAL VISUALIZATIONS</h1>
 
         <h2>Linked Spatial Visualization - 1</h2>
+        <p>This Linked visualization, employs an interactive approach, integrating a 
+            time selection chart with a geographical heatmap. The Bayes' 
+            Theorem is implicitly used here, allowing us, the users, for the updating of probabilities 
+            (or in this case, data visualization) as more evidence (time selection) is introduced. 
+            The upper part of the visualization features a time chart where users can select a range of dates and is equipped with a 
+            brush tool for selecting specific time ranges. The lower part is a heatmap that dynamically updates based on the selected time range from the time chart. 
+            It uses circular markers to indicate the location and density 
+            of traffic crashes, with a rainbow color scale to represent incident density. Both charts use tooltips for detailed data display.
+            This approach highlights temporal trends and geographical distributions in a user-driven manner.
+        </p>
         <div id="vis5"></div>
 
         <h2>Linked Spatial Visualization - 2</h2>
+        <p>This visualization, combines a pie chart and a 
+            heatmap to explore the relationship between weather conditions and Spatial Density of traffic crashes. The pie chart represents different weather 
+            conditions, each slice indicating the incidents under that condition, using a 20-color categorical scheme for visual 
+            distinction. An interactive single-selection tool allows users to focus on a specific weather condition, directly changing 
+            the data displayed in the heatmap.
+
+            The heatmap, located below the pie chart, dynamically and immediately responds to the selected weather condition. It visualizes the geographical 
+            distribution of hotspots of traffic accidents. The color intensity in the 
+            heatmap changes according to the number of incidents occured at that particular spot after mean calculation, providing a clear visual of how weather impacts traffic accidents in 
+            different areas.
+            
+            This linked visualization not only shows the frequency of accidents in various weather conditions but also maps them geographically,
+             offering a multifaceted view of the data. Additionally, while it reveals correlations between 
+            weather conditions and accident locations, it does not imply causation or explain other contributing factors to the accidents. </p>
+            <p>Note: The graph at first will appear empty without selection. The visualization of the Biggest pie in the pie chart may take time to load due to the large data, but the others will work just fine while the first one loads. for example, click on the red pie and then continue to see how the colour density and spot density changes.</p>    
         <div id="vis6"></div>
 
-        <h2>Linked Spatial Visualization - 3</h2>
+        <h2>Spatial Visualization Heatmap of Accidents over Chicago City</h2>
         <div id="vis7"></div>
-
-        <h2>Linked Spatial Visualization - 4</h2>
-        <div id="vis8"></div>
         
 
     </div>
